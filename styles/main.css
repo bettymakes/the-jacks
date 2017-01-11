@@ -9,23 +9,94 @@ html {
   margin: 0;
 }
 
-img {
-  width: 100%;
-}
-
-figure {
+body {
   margin: 0;
 }
 
+h1 {
+  color: #7ab55c;
+  background-color: #30373b;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 0 30px 0;
+}
+
+img {
+  width: 75%;
+  margin-bottom: 15px;
+}
+
+.container {
+  overflow: hidden;
+  max-width: 920px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  color: #ccc;
+  font-size: 1.3rem;
+}
+
+footer {
+  color: #ccc;
+  text-align: right;
+  margin: 100px 15px 15px 0;
+  font-size: 8px;
+}
+
+figure {
+  margin: 15px;
+  padding: 15px;
+  border: 5px solid black;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.5s border-color ease;
+}
+
+figure:hover {
+  border-color: #7ab55c;
+}
+
+figure:hover figcaption > span {
+  color: #7ab55c;
+}
+
+figcaption {
+  margin-bottom: 15px;
+  color: #30373b;
+}
+
+figcaption > span {
+  text-transform: uppercase;
+  color: #ccc;
+  font-weight: bold;
+  font-size: 0.625rem;
+  border-right: 1px solid #ddd;
+  padding-right: 5px;
+}
+
 @media screen and (min-width: 500px) {
-  figure {
+  .card {
     float: left;
     width: 50%;
   }
 }
 
 @media screen and (min-width: 1020px) {
-  figure {
+  .card {
     width: 25%;
+  }
+
+  figcaption > span {
+    display: block;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 15px;
   }
 }
